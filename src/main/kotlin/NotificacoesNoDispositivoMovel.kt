@@ -7,5 +7,9 @@ fun main() {
 }
 
 fun printNotificationSummary(numberOfMessages: Int) {
-//todo
+    if(numberOfMessages < 100){
+        println("Você possui ${numberOfMessages} notificações")
+    }else{
+       println("Voce possui 99+ noficações")
+    }
 }

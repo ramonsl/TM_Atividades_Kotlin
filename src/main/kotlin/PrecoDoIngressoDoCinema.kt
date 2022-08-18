@@ -11,4 +11,5 @@ fun main() {
 
 fun ticketPrice(age: Int, isMonday: Boolean): Int {
     //todo
+    return 0;
 }

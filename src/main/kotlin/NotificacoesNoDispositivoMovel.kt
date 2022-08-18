@@ -1,3 +1,4 @@
+// Done
 fun main() {
     val morningNotification = 51
     val eveningNotification = 135
@@ -7,5 +8,9 @@ fun main() {
 }
 
 fun printNotificationSummary(numberOfMessages: Int) {
-//todo
+    if(numberOfMessages >= 100){
+        println("Seu telefone possuie 99+ notificacoes.")
+    } else {
+        println("Seu telefone possuie ${numberOfMessages} notificacoes.")
+    }
 }

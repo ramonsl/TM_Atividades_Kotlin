@@ -1,5 +1,7 @@
 fun main() {
-    // Fill in the code.
+    printFinalTemperature(27.0, "Celcius", "Fahrenheit", {(9/5) * it + 32})
+    printFinalTemperature(350.0, "Kelvin", "Celcius", { it - 273.15})
+    printFinalTemperature(10.0, "Fahrenheit", "Kelvin", { (5/9)*( it - 32) + 273.15 })
 }
 
 fun printFinalTemperature(

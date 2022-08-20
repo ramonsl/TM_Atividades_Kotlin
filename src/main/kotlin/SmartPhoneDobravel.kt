@@ -1,9 +1,9 @@
 class Phone(var isScreenLightOn: Boolean = false){
-    fun switchOn() {
+    open fun switchOn() {
         isScreenLightOn = true
     }
 
-    fun switchOff() {
+    open fun switchOff() {
         isScreenLightOn = false
     }
 
@@ -12,3 +12,20 @@ class Phone(var isScreenLightOn: Boolean = false){
         println("The phone screen's light is $phoneScreenLight.")
     }
 }
+
+class FoldablePhone(isScreenLightOn: Boolean = false, var isFolded: Boolean = true) : Phone(isScreenLightOn) {
+    override fun switchOn() {
+        if (!this.isFolded){
+            isScreenLightOn = true
+        }
+    }
+
+    fun fold(){
+        this.isFolded = true
+    }
+
+    fun unFold(){
+        this.isFolded = false
+    }
+
+} 

@@ -7,5 +7,9 @@ fun main() {
 }
 
 fun printNotificationSummary(numberOfMessages: Int) {
-//todo
+	if(numberOfMessages < 100){
+        println("${numberOfMessages} Notificações");
+    } else {
+        println("99+ Notificações");
+    }
 }

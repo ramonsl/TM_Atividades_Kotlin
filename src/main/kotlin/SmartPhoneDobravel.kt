@@ -30,5 +30,11 @@ class SmartPhoneDobravel(var isFolded:Boolean = ture): Phone() {
 }
 
 fun main() {
-    
+    val smardobra = SmartPhoneDobravel()
+
+    smardobra.switchOn()
+    smardobra.checkPhoneScreenLight()
+    smardobra.unfold()
+    smardobra.switchOn()
+    smardobra.checkPhoneScreenLight()
 }
